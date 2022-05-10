@@ -11,6 +11,23 @@
         let x = [12,2,3,4]
        let output = x.reduce((a,b)=>a+b)
        console.log(output)
+//         1to n prime numbers
+        let n = parseInt(prompt("enter"));
+  for (let j = 2; j <= n; j++) {
+    let p = 1;
+    let i = 2;
+
+    while (i < j) {
+      if (parseInt(j % i) === 0) {
+        p = 0;
+        break;
+      }
+      i++;
+    }
+    if (p === 1) {
+      console.log("" + j);
+    }
+  }
         
     </script>
     
