@@ -133,6 +133,38 @@ for(var i in arr){
 
  }
  console.log(total)
+        
+// Arms trongb number        
+         // const number = parseInt(prompt("enter"));
+  // let sum = 0;
+  // let temp = number;
+  // while (temp > 0) {
+  //   let remainder = temp % 10;
+  //   sum += remainder * remainder * remainder;
+  //   temp = parseInt(temp / 10);
+  // }
+  // if (sum === number) {
+  //   console.log("A" + sum);
+  // } else {
+  //   console.log("no");
+  // }
+//         Armgs trong number find
+  const number = prompt("Enter a positive integer");
+  const numberOfDigits = number.length;
+  let sum = 0;
+  let temp = number;
+
+  while (temp > 0) {
+    let rem = temp % 10;
+    sum += rem ** numberOfDigits;
+    temp = parseInt(temp / 10);
+  }
+  if (sum === number) {
+    console.log(number);
+  } else {
+    console.log("no");
+  }
+        
 
      </script>
 </body>
