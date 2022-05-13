@@ -174,7 +174,19 @@ for(var i in arr){
     }
     console.log(`"Hcf ${num1} ${hcf}`);
   }
-        
+  
+//         LCm
+        let num1 = 2;
+  let num2 = 4;
+  let hcf;
+  for (let i = 0; i <= num1 && i <= num2; i++) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      hcf = i;
+    }
+    console.log(hcf);
+  }
+  let lcm = (num1 * num2) / hcf;
+  console.log("hcm" + lcm);
 
      </script>
 </body>
